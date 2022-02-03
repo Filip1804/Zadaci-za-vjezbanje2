@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Licence details</legend>
+            <ul>
+                <li>Email address<input type="email" name="email" id="email" required></li>
+                <li>Website <input type="text" name="website" id="website" required placeholder="http://www.exampe.com/"></li>
+                <li>Number of licenses <input type="text" name="licenses" id="licenses" required placeholder="How many to buy(1-10)"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Biling details</legend>
+            <ul>
+                <li>Name <input type="text" placeholder="First Last" required></li>
+                <li>Address <textarea name="address" id="address" cols="30" rows="3" required placeholder="House number, street, city, state"></textarea></li>
+                <li>Postal code <input type="text" id="postal_code" required placeholder="Post code or zip code"></li>
+                <li>Country <select name="Country" id="country" required>
+                    <option value="Australia">Australia</option>
+                    <option value="America">America</option>
+                    <option value="Russia">Russia</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    </select>
+                </li>
+                <li>Phone <i>(optional)</i><input type="tel" id="Phone" placeholder="Include country prefix, e.g."></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Payment details</legend>
+            <ul>
+                <li>Card number <input type="number" name="card" id="card" required placeholder="As shown on the front of you"></li>
+                <li>CVV code <input type="number" name="CVV" id="CVV" required max="3" placeholder="3-digit number on back of "></li>
+                <li>Expiry date <input type="text" required placeholder="YYYY-MM"></li>
+            </ul>
+        </fieldset>
+        <input type="submit" id="submit" value="Place Your Order">
+    </form>
+</body>
+</html>
