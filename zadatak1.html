@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <table border="1">
+    <tr>
+        <th colspan="2">Pizza shop 2.0</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td><input type="text" name="Name" id="Name" maxlength="20"></td>
+    </tr>
+    <tr>
+        <td>Pizza Topping</td>
+        <td>
+        <input type="radio" name="radio" id="Radio1">
+        <label for="Radio1">Supreme</label><br>
+        <input type="radio" name="radio" id="Radio2">
+        <label for="Radio2">Vegeterian</label><br>
+        <input type="radio" name="radio" id="Radio3">
+        <label for="Radio3">Hawaiian</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Pizza Sauce</td>
+        <td>
+            <select name="Sauce" id="Sauce">
+                <option value="Tomato">Tomato</option>
+                <option value="Garlic">Garlic</option>
+                <option value="HotSauce">Hot Sauce</option>
+                <option value="Mayo">Mayo</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Optional Extras</td>
+        <td>
+            <input type="checkbox" name="Cheese" id="Cheese" value="Extra Cheese">
+            <label for="Cheese">Extra Cheese</label>
+            <input type="checkbox" name="GlutenFree" id="GlutenFree" value="Gluten Free Base">
+            <label for="GlutenFree">Gluten Free Base</label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            Delivery Instruction: <br>
+            <textarea name="Del_instructions" id="Del_instructions" cols="60" rows="5" maxlength="100" required ></textarea><br>
+            <input type="submit" value="Send my Order!">
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
